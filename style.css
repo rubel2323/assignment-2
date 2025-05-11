@@ -1,0 +1,144 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Import Miama font */
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+/* Font Styles */
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.miama-font{
+  font-family: "Miama", sans-serif;
+  font-size: 4.9rem;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Body Style---body,html{} */
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
+   font-family: "Inter", sans-serif;
+}
+
+/* Common Styles */
+.flex {
+  display: flex;
+}
+
+.w-major{
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: aliceblue; */
+}
+
+/* Header Styles */
+.navbar {
+  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.navbar-title {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2.125rem;
+  color: #e6523c;
+  /* margin-left: -150px; */
+}
+
+.navbar-links {
+  margin-top: 18px;
+}
+
+nav > ul {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding-left: 8px;
+}
+
+nav > ul > li {
+  
+  font-size: 1.125rem;
+  font-weight: 400;
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 8px 0px 0px;
+}
+
+nav > ul > li:hover {
+  background-color: rgb(230, 82, 60);
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+  cursor: pointer; 
+}
+
+/* hero style design */
+.hero{
+  gap: 80px;
+}
+
+description{
+  width: 50%;
+
+}
+
+.description-title{
+  font-size: 4.8rem;
+  font-weight: 900;
+}
+
+.description-subtitle{
+ 
+}
+
+.hero-container{
+  position: relative;
+  width: 100%;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  
+}
+.hero-image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+.top-right-btn,.bottom-left-btn{
+  position: absolute;
+  padding:  10px 15px;
+  border-radius: 10px;
+  font-weight: 800;
+  color: hsl(0, 27%, 94%);
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(1px);
+
+}
+  
+.top-right-btn{
+  top: 130px;
+  right:-40px;
+  background-color: rgba(231, 222, 222, 0.1)
+}
+
+.bottom-left-btn{
+  bottom: 60px;
+  left: -30px;
+  background-color: rgba(231, 222, 222, 0.1)
+}
