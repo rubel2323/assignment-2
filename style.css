@@ -26,7 +26,7 @@
 }
 
 /* Body Style---body,html{} */
-body{
+body,html{
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
@@ -39,11 +39,51 @@ body{
   display: flex;
 }
 
-.w-major{
+.w-major {
   width: 80%;
   margin: 0 auto;
   /* background-color: aliceblue; */
 }
+
+.secondary-color {
+  color: rgb(255, 255, 255, 0.5)
+}
+
+.btn{
+  gap: 40px;
+}
+
+
+
+.btn-primary{
+  position: static;
+  background-color: rgb(230, 82, 60);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-secondary{
+  position: static;
+  background-color: black;
+  color: white;
+  border: none; 
+  /* Slightly lighter border */
+  box-shadow: 0 0 0 1px white; /* Simulates a border with consistent color */
+  border-radius: 999px; /* Fully rounded pill shape */
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+   box-sizing: border-box;
+  
+}
+
+
+
 
 /* Header Styles */
 .navbar {
@@ -104,7 +144,10 @@ description{
 }
 
 .description-subtitle{
- 
+  margin-top: -50px;
+  font-size: 1rem;
+  font-weight: 400;
+
 }
 
 .hero-container{
