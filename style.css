@@ -193,3 +193,71 @@ description{
   border-radius: 50%;
   background: red;
 }
+
+/* habit section */
+
+.habit-description{
+  width: 60%;
+  margin: 0 auto;
+ 
+}
+.habit-title p{
+  text-align: center;
+  /* font-family: "Inter", sans-serif; */
+  font-size: 3rem;
+  font-weight: 900;
+}
+.habit-subtitle{
+  margin: -30px;
+}
+.habit-subtitle p{
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.habit-container{
+  margin-top: 50px;
+  gap: 50px;
+    justify-content: center;
+  align-items: flex-start;
+}
+
+.habit-card {
+  
+  max-width:250px ;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  
+
+}
+
+.habit-card-one {
+    width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* margin-right: 6.25rem; */
+  overflow: hidden;
+  
+
+}
+
+.habit-card-one img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+
+.habit-card-description .title,
+.habit-card-description .subtitle{
+  /* margin-left: 0; */
+  text-align: center;
+   color: rgb(255, 255, 255, 0.5)
+
+
+
+}
