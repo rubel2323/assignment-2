@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Section</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        background-color: #1e1e1e;
+        color: #fff;
+        border-radius: 16px;
+        padding: 24px;
+        max-width: 900px;
+        gap: 24px;
+        align-items: center;
+      }
+
+      .text-section {
+        flex: 1;
+      }
+
+      .text-section h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0 0 12px 0;
+        line-height: 1.2;
+      }
+
+      .text-section p {
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        max-width: 400px;
+      }
+
+      .text-section button {
+        background-color: #ff5c5c;
+        color: white;
+        padding: 10px 24px;
+        border: none;
+        border-radius: 999px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .text-section button:hover {
+        background-color: #e14b4b;
+      }
+
+      .image-section img {
+        width: 240px;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .image-section img {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-section">
+        <h2>
+          Run an Extra<br />
+          Mile Easily
+        </h2>
+        <p>
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or access to a gym. With hundreds of professional
+          workouts.
+        </p>
+        <button>Join Now</button>
+      </div>
+      <div class="image-section">
+        <img src="images/run.jpg" alt="Runner Image" />
+      </div>
+    </div>
+  </body>
+</html>

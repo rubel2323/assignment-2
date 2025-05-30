@@ -187,7 +187,7 @@ description{
 }
 
 .red-circle{
-  position: ;
+
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -253,11 +253,40 @@ description{
 }
 
 .habit-card-description .title,
-.habit-card-description .subtitle{
-  /* margin-left: 0; */
+.habit-card-description .subtitle {
   text-align: center;
-   color: rgb(255, 255, 255, 0.5)
+  color: rgb(255, 255, 255, 0.5);
+}
 
+.extra-mile-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: -20px;
+  border-radius: 1rem;
+background: #222222;
+}
 
-
+.extra-mile-title{
+  width: 50%;
+}
+.extra-mile-title h2{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.extra-mile-img
+{
+  width: 35%;
+  height: auto; 
+  
+}
+.extra-mile-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  
+  
 }
