@@ -1,13 +1,14 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* Import Miama font */
-@import url('https://fonts.cdnfonts.com/css/miama');
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 /* Font Styles */
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
+
   font-style: normal;
 }
 
@@ -17,7 +18,7 @@
   font-style: normal;
 }
 
-.miama-font{
+.miama-font {
   font-family: "Miama", sans-serif;
   font-size: 4.9rem;
   font-weight: 400;
@@ -26,12 +27,13 @@
 }
 
 /* Body Style---body,html{} */
-body,html{
+body,
+html {
   margin: 0;
   padding: 0;
   background-color: rgb(0, 0, 0);
   color: whitesmoke;
-   font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Common Styles */
@@ -46,16 +48,14 @@ body,html{
 }
 
 .secondary-color {
-  color: rgb(255, 255, 255, 0.5)
+  color: rgb(255, 255, 255, 0.5);
 }
 
-.btn{
+.btn {
   gap: 40px;
 }
 
-
-
-.btn-primary{
+.btn-primary {
   position: static;
   background-color: rgb(230, 82, 60);
   color: rgb(255, 255, 255);
@@ -67,27 +67,27 @@ body,html{
   cursor: pointer;
 }
 
-.btn-secondary{
+.btn-secondary {
   position: static;
   background-color: black;
   color: white;
-  border: none; 
+  border: none;
   /* Slightly lighter border */
   box-shadow: 0 0 0 1px white; /* Simulates a border with consistent color */
   border-radius: 999px; /* Fully rounded pill shape */
   padding: 10px 20px;
   font-size: 1rem;
   cursor: pointer;
-   box-sizing: border-box;
-  
+  box-sizing: border-box;
 }
-
-
-
 
 /* Header Styles */
 .navbar {
-  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
   justify-content: space-between;
   flex-direction: row;
 }
@@ -112,7 +112,6 @@ nav > ul {
 }
 
 nav > ul > li {
-  
   font-size: 1.125rem;
   font-weight: 400;
   list-style: none;
@@ -125,69 +124,65 @@ nav > ul > li:hover {
   background-color: rgb(230, 82, 60);
   color: rgb(255, 255, 255);
   border-radius: 20px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 /* hero style design */
-.hero{
+.hero {
   gap: 80px;
 }
 
-description{
+description {
   width: 50%;
-
 }
 
-.description-title{
+.description-title {
   font-size: 4.8rem;
   font-weight: 900;
 }
 
-.description-subtitle{
+.description-subtitle {
   margin-top: -50px;
   font-size: 1rem;
   font-weight: 400;
-
 }
 
-.hero-container{
+.hero-container {
   position: relative;
   width: 100%;
   /* padding: 20px; */
   box-sizing: border-box;
-  
 }
-.hero-image{
+.hero-image {
   max-width: 100%;
   height: auto;
   display: block;
 }
- 
-.top-right-btn,.bottom-left-btn{
+
+.top-right-btn,
+.bottom-left-btn {
   position: absolute;
-  padding:  10px 15px;
+  padding: 10px 15px;
   border-radius: 10px;
   font-weight: 800;
   /* color: hsl(0, 27%, 94%); */
   /* background-color: rgba(0,0,0,0.6); */
   backdrop-filter: blur(5px);
-
 }
-  
-.top-right-btn{
+
+.top-right-btn {
   top: 160px;
-  right:80px;
-  background-color: rgba(231, 222, 222, 0.1)
+  right: 80px;
+  background-color: rgba(231, 222, 222, 0.1);
 }
 
-.bottom-left-btn{
+.bottom-left-btn {
   bottom: 60px;
   left: -30px;
-  background-color:rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.red-circle{
-
+.red-circle {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -196,60 +191,53 @@ description{
 
 /* habit section */
 
-.habit-description{
+.habit-description {
   width: 60%;
   margin: 0 auto;
- 
 }
-.habit-title p{
+.habit-title p {
   text-align: center;
   /* font-family: "Inter", sans-serif; */
   font-size: 3rem;
   font-weight: 900;
 }
-.habit-subtitle{
+.habit-subtitle {
   margin: -30px;
 }
-.habit-subtitle p{
+.habit-subtitle p {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
-.habit-container{
+.habit-container {
   margin-top: 50px;
   gap: 50px;
-    justify-content: center;
+  justify-content: center;
   align-items: flex-start;
 }
 
 .habit-card {
-  
-  max-width:250px ;
+  max-width: 250px;
   height: auto;
   display: flex;
   flex-direction: column;
   /* align-items: center;
   justify-content: center; */
-  
-
 }
 
 .habit-card-one {
-    width: 200px;
+  width: 200px;
   height: 200px;
   border-radius: 50%;
   /* margin-right: 6.25rem; */
   overflow: hidden;
-  
-
 }
 
-.habit-card-one img{
+.habit-card-one img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-
 }
 
 .habit-card-description .title,
@@ -266,27 +254,39 @@ description{
   justify-content: space-between;
   gap: -20px;
   border-radius: 1rem;
-background: #222222;
+  background: #222222;
 }
 
-.extra-mile-title{
+.extra-mile-title {
   width: 50%;
 }
-.extra-mile-title h2{
+.extra-mile-title h2 {
   font-size: 2.5rem;
   font-weight: 900;
 }
-.extra-mile-img
-{
+.extra-mile-img {
   width: 35%;
-  height: auto; 
-  
+  height: auto;
 }
-.extra-mile-img img{
+.extra-mile-img img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 1rem;
-  
-  
+}
+
+.calculator {
+  width: 50%;
+  margin: 40px auto;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.bmi-container {
+  width: 100%;
+
+  justify-content: space-around;
+  align-items: center;
+
+  background: #222222;
 }
