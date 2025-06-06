@@ -66,6 +66,10 @@
         object-fit: cover;
       }
 
+      .bmi-form-row {
+        margin-top: 20px;
+      }
+
       @media (max-width: 768px) {
         .container {
           flex-direction: column;
@@ -92,6 +96,20 @@
           workouts.
         </p>
         <button>Join Now</button>
+        <div class="bmi-form-row">
+          <select required style="width: 100%">
+            <option value="" disabled selected>
+              Select an activity factor
+            </option>
+            <option value="sedentary">Sedentary</option>
+            <option value="active">Active</option>
+          </select>
+        </div>
+        <form class="bmi-form">
+          <div class="bmi-form-row">
+            <input type="text" placeholder="Only child input" />
+          </div>
+        </form>
       </div>
       <div class="image-section">
         <img src="images/run.jpg" alt="Runner Image" />

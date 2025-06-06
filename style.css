@@ -282,11 +282,125 @@ description {
   justify-content: space-between;
 }
 
+/* calculator area */
+
+.bmi-section {
+  background: #232323;
+  padding: 48px 0;
+}
+
 .bmi-container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 64px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-  justify-content: space-around;
+.bmi-chart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
 
-  background: #222222;
+.bmi-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.bmi-table {
+  width: 320px;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.bmi-table th,
+.bmi-table td {
+  border: 1px solid #444;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.bmi-table th {
+  background: transparent;
+  font-weight: 600;
+}
+
+.bmi-table tr {
+  background: transparent;
+}
+
+.bmi-form-section {
+  flex: 1;
+  max-width: 420px;
+}
+
+.bmi-desc {
+  color: #aaa;
+  margin-bottom: 24px;
+  font-size: 1rem;
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bmi-form-row {
+  display: flex;
+  gap: 18px;
+}
+
+/* Ensure all form elements are the same size and fill their row */
+.bmi-form input,
+.bmi-form select {
+  flex: 1 1 0;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #353535;
+  color: rgb(255, 255, 255, 0.3);
+  font-size: 1rem;
+  outline: none;
+  appearance: none;
+}
+
+.bmi-calc-btn {
+  margin-top: 18px;
+
+  padding: 16px 0;
+  background: #e6523c;
+  color: #fff;
+  border: none;
+  /* border-radius: 50%; */
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.bmi-calc-btn:hover {
+  background: #ff5c5c;
+}
+
+@media (max-width: 900px) {
+  .bmi-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .bmi-chart,
+  .bmi-form-section {
+    max-width: 100%;
+    width: 100%;
+  }
+  .bmi-table {
+    width: 100%;
+  }
 }
