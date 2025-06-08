@@ -296,6 +296,7 @@ description {
   gap: 64px;
   max-width: 1100px;
   margin: 0 auto;
+  flex-wrap: wrap; /* Allows the chart and form to stack on smaller screens */
 }
 
 .bmi-chart {
@@ -313,8 +314,7 @@ description {
 
 .bmi-table {
   width: 320px;
-  border-collapse: collapse;
-  background: transparent;
+  border-collapse: collapse; /* Collapse borders for a cleaner look and realistic look as an individual border by mixing two different border */
 }
 
 .bmi-table th,
@@ -325,17 +325,13 @@ description {
 }
 
 .bmi-table th {
-  background: transparent;
   font-weight: 600;
 }
 
-.bmi-table tr {
-  background: transparent;
-}
-
 .bmi-form-section {
-  flex: 1;
+  flex: 1 1 auto;
   max-width: 420px;
+  box-sizing: border-box;
 }
 
 .bmi-desc {
@@ -355,11 +351,10 @@ description {
   gap: 18px;
 }
 
-/* Ensure all form elements are the same size and fill their row */
 .bmi-form input,
 .bmi-form select {
   flex: 1 1 0;
-  min-width: 0;
+  min-width: 0; /* Prevents flex items from overflowing their container */
   box-sizing: border-box;
   padding: 12px 20px;
   border: none;
@@ -388,6 +383,153 @@ description {
 .bmi-calc-btn:hover {
   background: #ff5c5c;
 }
+
+/* team member styles */
+.team-member {
+  max-width: 900px;
+  margin: 80px auto 80px auto;
+}
+.team-member-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-member .team-title h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.team-member .team-subtitle p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.team-grid {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #232323;
+  gap: 20px;
+  padding: 18px;
+}
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  /* box-shadow: rgba(0, 0, 0, 0.3); */
+}
+
+.team-card img {
+  width: 100%;
+  height: 220px;
+  display: block;
+  object-fit: cover;
+}
+
+.team-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.team-info h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 2px 0;
+}
+
+.team-info span {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0 0 5px 0;
+}
+/* footer design */
+
+.footer {
+  background: #222222;
+  /* padding: 48px 0 0 0; */
+  padding: 0;
+  margin: 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin: 10px 190px 0 190px;
+}
+
+.footer-brand {
+  flex: 0.8;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #e6523c;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  max-width: 400px;
+  line-height: 1.7;
+}
+.footer-links {
+  flex: 0.35;
+}
+.footer-links h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(255, 255, 255, 0.5);
+  transition: color 0.2s;
+}
+.footer-links ul li a:hover {
+  color: #e6523c;
+}
+hr {
+  margin-top: 20px;
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+
+  width: 70%;
+}
+.footer-bottom-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255, 0.5);
+  text-align: center;
+}
+.footer-bottom-text p {
+  margin: 0;
+  padding: 20px;
+}
+
+/* Responsive Styles */
 
 @media (max-width: 900px) {
   .bmi-container {
