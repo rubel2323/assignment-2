@@ -286,15 +286,15 @@ description {
 
 .bmi-section {
   background: #232323;
-  padding: 48px 0;
+  padding: 40px 0;
 }
 
 .bmi-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-  max-width: 1100px;
+  align-items: space-between;
+  gap: 2.5rem;
+  max-width: 85%;
   margin: 0 auto;
   flex-wrap: wrap; /* Allows the chart and form to stack on smaller screens */
 }
@@ -535,7 +535,7 @@ hr {
   .bmi-container {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: -20px;
   }
   .bmi-chart,
   .bmi-form-section {
@@ -546,3 +546,11 @@ hr {
     width: 100%;
   }
 }
+
+/* @media (min-width: 992px) {
+  .bmi-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+} */
