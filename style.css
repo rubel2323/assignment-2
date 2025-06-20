@@ -107,8 +107,8 @@ html {
 nav > ul {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding-left: 8px;
+  border-radius: 1.25rem;
+  padding-left: 0.5rem;
 }
 
 nav > ul > li {
@@ -461,13 +461,13 @@ description {
 .footer-container {
   display: flex;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 85%;
   flex-wrap: wrap;
-  margin: 10px 190px 0 190px;
+  margin: 0.8rem 12rem 0rem 12rem;
 }
 
 .footer-brand {
-  flex: 0.8;
+  flex: 0.7;
 }
 
 .footer-logo {
@@ -475,17 +475,17 @@ description {
   font-weight: 900;
   color: #e6523c;
   font-style: italic;
-  margin-bottom: 10px;
+  margin-top: 1rem;
 }
 
 .footer-desc {
   color: rgb(255, 255, 255, 0.5);
   font-size: 0.9rem;
-  max-width: 400px;
+  max-width: 90%;
   line-height: 1.7;
 }
 .footer-links {
-  flex: 0.35;
+  flex: 0.4;
 }
 .footer-links h3 {
   font-size: 1.5rem;
@@ -514,10 +514,9 @@ hr {
   margin-top: 20px;
   border: none;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-
   width: 70%;
 }
+
 .footer-bottom-text {
   font-weight: 400;
   font-size: 1.4rem;
@@ -546,11 +545,3 @@ hr {
     width: 100%;
   }
 }
-
-/* @media (min-width: 992px) {
-  .bmi-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-} */
