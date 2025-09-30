@@ -97,7 +97,7 @@ html {
   font-style: italic;
   font-size: 2.125rem;
   color: #e6523c;
-  /* margin-left: -150px; */
+  
 }
 
 .navbar-links {
@@ -170,14 +170,14 @@ description {
 }
 
 .top-right-btn {
-  top: 160px;
-  right: 80px;
+  top: 10rem;
+  right: 5rem;
   background-color: rgba(231, 222, 222, 0.1);
 }
 
 .bottom-left-btn {
-  bottom: 60px;
-  left: -30px;
+  bottom: 3.8rem;
+  left: -1.8rem;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -569,6 +569,23 @@ hr {
 
 @media (max-width: 576px)
  {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav > ul {
+    padding: 0.3rem;
+  }
+  nav > ul > li {
+    display: list-item;
+    font-size: 1rem;
+    padding: 8px;
+    margin: 0px 4px 0px 0px;
+  }
+
+
   .w-major,
   .footer-container,
   .extra-mile-container,
@@ -600,11 +617,27 @@ hr {
   .hero-image{
     
     
-    width: 100%;
+    width: 70%;
     height: auto;
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; */
   }
+
+.floating-button{
+  display: none;
+  
+  
+  
+}
+
+.habit-title p{
+  font-size: 2rem;
+}
+.habit-subtitle p{
+  margin-top: 3rem;
+}
+
+
 
   .habit-container 
   {
@@ -643,6 +676,21 @@ hr {
 }
 .bmi-form-section{
   padding: 0;
+}
+
+description {
+  width: 50%;
+}
+
+.description-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.description-subtitle {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 }
