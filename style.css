@@ -130,6 +130,7 @@ nav > ul > li:hover {
 /* hero style design */
 .hero {
   gap: 5rem;
+
 }
 
 description {
@@ -150,7 +151,6 @@ description {
 .hero-container {
   position: relative;
   width: 100%;
-
   box-sizing: border-box;
 }
 .hero-image {
@@ -211,7 +211,9 @@ description {
 
 .habit-container {
   margin-top: 50px;
-  gap: 50px;
+  gap: 3rem;
+  display: flex;
+  /* grid-template-columns: repeat(1, 1fr); */
   justify-content: center;
   align-items: flex-start;
 }
@@ -219,8 +221,8 @@ description {
 .habit-card {
   max-width: 250px;
   height: auto;
-  display: flex;
-  flex-direction: column;
+
+  /* flex-direction: column; */
   /* align-items: center;
   justify-content: center; */
 }
@@ -274,18 +276,25 @@ description {
   border-radius: 1rem;
 }
 
-.calculator {
-  width: 50%;
-  margin: 40px auto;
-  padding: 30px;
-  justify-content: space-between;
-}
+
 
 /* calculator area */
+.bmi-calculator{
+  flex-wrap: wrap;
+  
+}
+
+.calculator {
+  width: 50%;
+  margin: 2.5rem auto;
+  padding: 1.8rem;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
 
 .bmi-section {
   background: #232323;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 
 .bmi-container {
@@ -312,14 +321,14 @@ description {
 }
 
 .bmi-table {
-  width: 320px;
+  width: 20rem;
   border-collapse: collapse; /* Collapse borders for a cleaner look and realistic look as an individual border by mixing two different border */
 }
 
 .bmi-table th,
 .bmi-table td {
   border: 1px solid #444;
-  padding: 14px 18px;
+  padding: .8rem 1.1rem;
   text-align: left;
 }
 
@@ -329,25 +338,25 @@ description {
 
 .bmi-form-section {
   flex: 1 1 auto;
-  max-width: 420px;
+  max-width: 26rem;
   box-sizing: border-box;
 }
 
 .bmi-desc {
   color: #aaa;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
 }
 
 .bmi-form {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 1.1rem;
 }
 
 .bmi-form-row {
   display: flex;
-  gap: 18px;
+  gap: 1.1rem;
 }
 
 .bmi-form input,
@@ -355,9 +364,9 @@ description {
   flex: 1 1 0;
   min-width: 0; /* Prevents flex items from overflowing their container */
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: .7rem 1.2rem;
   border: none;
-  border-radius: 8px;
+  border-radius: .5rem;
   background: #353535;
   color: rgb(255, 255, 255, 0.3);
   font-size: 1rem;
@@ -366,9 +375,9 @@ description {
 }
 
 .bmi-calc-btn {
-  margin-top: 18px;
+  margin-top: 1.1rem;
 
-  padding: 16px 0;
+  padding: 1rem 0;
   background: #e6523c;
   color: #fff;
   border: none;
@@ -558,16 +567,82 @@ hr {
   }
 } */
 
-@media (max-width: 576px) {
+@media (max-width: 576px)
+ {
   .w-major,
   .footer-container,
   .extra-mile-container,
   .bmi-container,
-  .team-member {
+  .team-member
+   {
     max-width: 100%;
     width: 100%;
     margin: 0;
     padding: 0 8px;
     box-sizing: border-box;
   }
+
+  .hero{
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+  .hero-container{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 1.8rem;
+    box-sizing: border-box;
+    flex: 1 1 0;
+
+
+  }
+  .hero-image{
+    
+    
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .habit-container 
+  {
+    max-width: 40%;
+    margin: 3.5rem auto;
+    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for small screens */
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+.bmi-container {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 4px;
+  box-sizing: border-box;
+
+}
+
+.bmi-chart,
+.bmi-form-section
+{
+
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;  
+
+}
+.bmi-table{
+  width: 100%;
+  font-size: 0.85rem;
+}
+.bmi-form-section{
+  padding: 0;
+}
+
 }
